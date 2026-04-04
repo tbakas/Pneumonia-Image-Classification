@@ -67,7 +67,9 @@ def get_accuracy():
 if __name__ == '__main__':
     batch_size = 32
 
-    data_folder_path = r"C:\Users\tbaka\Jupyter\Data Science Projects\medical_detection\chest_xray\train"
+    # data set obtained from kaggle: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+    data_folder_path = r"C:\Users\tbakas\Jupyter\Data Science Projects\medical_detection\chest_xray\train"
+    # add some image augmentations to the training images
     transform = transforms.Compose([transforms.Resize((image_size, image_size)),
                                     transforms.RandomHorizontalFlip(p=0.5),
                                     transforms.RandomRotation(degrees=15),
@@ -93,7 +95,7 @@ if __name__ == '__main__':
     val_len = len(val_dataset)
 
     model = CNN()
-    print('initial accuracy:', get_accuracy())
+    print('initial accuracy:', get_accuracy()) # started at 50% as expected
     optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4)
     record_loss = []
 
