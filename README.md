@@ -3,3 +3,5 @@ with roughly 89% test accuracy. Additionally, it correctly predicted 97% of the 
 error type isn't typically too big of a deal in this context. And this is probably partly due to the training set being roughly 74% pneumonia images. It could probably
 be fixed somewhat by just including more non-pneumonia images in the training set. Also, the test set was better balanced as roughly 63% of the test images were of patients
 with pneumonia.
+
+The data set can be found here [link]<https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia>.
