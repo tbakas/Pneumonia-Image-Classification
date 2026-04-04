@@ -4,4 +4,4 @@ error type isn't typically too big of a deal in this context. And this is probab
 be fixed somewhat by just including more non-pneumonia images in the training set. Also, the test set was better balanced as roughly 63% of the test images were of patients
 with pneumonia.
 
-The data set can be found here [link]<https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia>.
+The data set can be found [here](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia).
