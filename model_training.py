@@ -40,6 +40,7 @@ class CNN(torch.nn.Module):
         self.activation = torch.nn.ReLU()
 
         self.linear1 = torch.nn.Linear(self.final_size, 1000)
+        # could have used a single output with a binary loss for fewer parameters
         self.linear2 = torch.nn.Linear(1000, 2)
 
     def forward(self, x):
